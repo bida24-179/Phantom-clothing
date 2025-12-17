@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Phantom | Shop</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<h2 class="logo">PHANTOM SHOP</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+
+<section class="products">
+<div class="product">
+<img src="tee-front.jpg" alt="Phantom Tee">
+<h3>Phantom Black Tee</h3>
+<p>P250.00</p>
+<button onclick="addToCart('Phantom Black Tee',250)">Add to Cart</button>
+</div>
+
+
+<div class="product">
+<img src="hoodie.jpg" alt="Phantom Hoodie">
+<h3>Phantom Hoodie</h3>
+<p>P450.00</p>
+<button onclick="addToCart('Phantom Hoodie',450)">Add to Cart</button>
+</div>
+</section>
+
+
+<aside class="cart">
+<h3>Your Cart</h3>
+<div id="cartItems"></div>
+<p class="total">Total: P<span id="total">0</span></p>
+<input id="name" placeholder="Full Name" />
+<input id="email" placeholder="Email" />
+<input id="address" placeholder="Address" />
+<button onclick="checkout()">Checkout</button>
+</aside>
+
+
+<footer>© 2025 Phantom Clothing</footer>
+<script src="script.js"></script>
+</body>
+</html>
