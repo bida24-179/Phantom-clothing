@@ -24,38 +24,35 @@ nav a:hover { opacity:0.6; }
   padding: 40px;
 }
 
-.product {
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s;
-  height: 450px; /* fixed height for uniformity */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+<style>
+.products {
+  max-width: 300px;
 }
-
-.img-wrap {
-  height: 250px; /* reduced height for better balance */
+.slider {
+  position: relative;
+  overflow: hidden;
 }
-
-.img-wrap img {
-  height: 100%;
-  object-fit: cover;
+.slides img {
+  width: 100%;
+  display: none;
 }
-
-
-.cart {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 280px; /* slightly narrower */
-  height: 100%;
-  background: #fafafa;
-  border-left: 1px solid #ddd;
-  padding: 20px;
-  overflow-y: auto; /* scroll if content overflows */
+.slides img.active {
+  display: block;
 }
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+.prev { left: 5px; }
+.next { right: 5px; }
+</style>
+
 
 .cart h3 {
   font-size: 20px;
