@@ -19,10 +19,16 @@
 
 <section class="products">
 <div class="product">
-<div class="img-wrap">
+<div class="slider">
+<div class="slides">  
 <img src="tee-front.jpg" class="img-front" alt="Phantom Tee Front">
 <img src="tee-back.jpg" class="img-back" alt="Phantom Tee Back">
 </div>
+<!-- Navigation arrows -->
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
 <h3>Phantom Black Tee</h3>
 <p>P250.00</p>
 <button onclick="addToCart('Phantom Black Tee',250)">Add to Cart</button>
@@ -30,26 +36,21 @@
 
 
 <div class="product">
-<div class="img-wrap">
+<div class="slider">
+<div class="slides">
 <img src="hoodie-front.jpg" class="img-front" alt="Phantom Hoodie Front">
 <img src="hoodie-back.jpg" class="img-back" alt="Phantom Hoodie Back">
 </div>
+<!-- Navigation arrows -->
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+  
 <h3>Phantom Hoodie</h3>
-<p>P450.00</p>
+<p>P250.00</p>
 <button onclick="addToCart('Phantom Hoodie',450)">Add to Cart</button>
 </div>
 </section>
-
-
-<aside class="cart">
-<h3>Your Cart</h3>
-<div id="cartItems"></div>
-<p class="total">Total: P<span id="total">0</span></p>
-<input id="name" placeholder="Full Name" />
-<input id="email" placeholder="Email" />
-<input id="address" placeholder="Address" />
-<button onclick="checkout()">Checkout</button>
-</aside>
 
 
 <footer>© 2025 Phantom Clothing</footer>
